@@ -5,7 +5,7 @@ function renderObjectsFromArray() {
     {
       description: "My personal project, which I created from a thought to production. It's using parallax scrolling in mobile first design. This website is fully responsive and supports all major browsers.",
       name: "Katoomba",
-      thumbnail: "images/Katoomba.jpg",
+      thumbnail: "images/katoomba.jpg",
       website: "http://larryshawn.github.io/parallax/"
     },
 
