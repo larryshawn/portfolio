@@ -1,6 +1,7 @@
 body {
   background-color: black;
   color: white;
+  font-family: 'Lucida Grande', Menlo, Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
 }
 
 .center {
@@ -38,12 +39,20 @@ body {
   width: 100%;
   background-color: slategray;
   padding-bottom: 20px;
+  line-height: 1.8em;
 }
 
 #alternate-container {
   width: 100%;
   background-color: #000;
   color: #ebebeb;
+  padding-bottom: 20px;
+}
+
+#contact-container {
+  width: 100%;
+  background-color: #fff;
+  color: #333;
   padding-bottom: 20px;
 }
 

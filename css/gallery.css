@@ -32,10 +32,14 @@ body {
   cursor: pointer;
 }
 
+.website {
+  padding: 10px;
+}
+
 .mask {
   background-color: rgba(0,0,0,.8);
   color: white;
-  height: 265px;
+  height: 315px;
   font-size: 16px;
   font-weight: lighter;
   font-family: sans-serif;
@@ -51,7 +55,7 @@ body {
 }
 
 .description {
-  height: 205px;
+  height: 186px;
   overflow: auto;
   font-size: 15px;
   color: #999;
