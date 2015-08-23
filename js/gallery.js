@@ -1,11 +1,10 @@
+"use strict";
 function fetchData() {
   var rawTemplate = $('#music-template').html();
   var resultString = '';
 
   $.get('https://larrybabcock.firebaseio.com/works.json', function(works) {
 
-    // Slightly different approach: every time we stamp out a new template, we "concatenate" (or glue) the string into a giant string that ultimately contains all our cards. We then take this giant string and append it in its entirety into the thumbnails-container <div>.
-    console.log(works);
     for (var i = 0; i < works.length; i++) {
       resultString += Mustache.render(rawTemplate, works[i]);
     }
@@ -35,5 +34,3 @@ function handleClickEvents() {
 }
 
 fetchData();
-
-
