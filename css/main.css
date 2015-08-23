@@ -10,8 +10,8 @@ body {
 
 #nav-header {
   background-color: #333;
-  height: 90px;
-  font-size: 34px;
+  height: 52px;
+  font-size: 20px;
   font-weight: lighter;
   padding-left: 25px;
 }
@@ -22,7 +22,9 @@ body {
 }
 
 #subtitle {
-    margin-top: 0;
+  margin-top: 0;
+  font-size: 13px;
+  font-style: italic;
 }
 
 .mask > .description {
@@ -116,6 +118,9 @@ body {
 
 #tagline1 {
   font-size: 3em;
+  letter-spacing: -2px;
+  padding-top: 10px;
+  line-height: 1;
 }
 
 #tagline2 {
@@ -129,6 +134,8 @@ body {
   position: relative;
   bottom: 2px;
   font-style: oblique;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 #tagline3 span {
