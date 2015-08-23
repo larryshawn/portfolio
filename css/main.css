@@ -154,23 +154,6 @@ body {
   float: left;
 }
 
-.description {
-  text-align: left;
-  margin-left: 20px;
-  position: relative;
-  left: 20px;
-  padding-right: 20px;
-}
-
-.description a {
-  /*color: white;*/
-}
-
-.description ul {
-  position: relative;
-  left: 16px;
-}
-
 .card {
   border: 1px solid lightgray;
   padding: 16px;
