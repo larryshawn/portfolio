@@ -1,7 +1,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: 'Lucida Grande', Menlo, Monaco, 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+  font-family: helvetica,Arial,sans-serif;
 }
 
 .center {
