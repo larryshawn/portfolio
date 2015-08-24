@@ -18,6 +18,7 @@ function handleClickEvents() {
   // If any movie thumbnail gets clicked, slide the mask curtain down.
   $('.movie-thumbnail').click(function(e) {
     var mask = $(e.target).children('.mask');
+    mask.css('display', 'relative');
     mask.css('transform', 'translateY(0)');
   });
 
