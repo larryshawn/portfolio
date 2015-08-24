@@ -45,6 +45,7 @@ body {
   font-family: sans-serif;
   padding: 25px;
   position: relative;
+  display: none;
   transform: translateY(-365px);
   transition: transform 750ms;
 }
