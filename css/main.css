@@ -618,6 +618,10 @@ html {
   .introduction {
     font-size: 1.5em;
   }
+
+  .superhero {
+    width: 50%;
+  }
   
   .main-nav-list {
     right: 68px;
