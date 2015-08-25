@@ -481,6 +481,12 @@ html {
   background: #d9264a;
 }
 
+.si-icon-hamburger-cross svg {
+  padding-right: 10px;
+}
+
+
+/* This one's outside of the media queries but related to the following rule declaration*/
 .introduction p {
   font-size: 1em;
   line-height: 0em;
