@@ -481,16 +481,20 @@ html {
   background: #d9264a;
 }
 
+.introduction p {
+  font-size: 1em;
+  line-height: 0em;
+}
+
+/* elements that are using media queries */
+
 .introduction {
-  background-color: slategray;
-  position: absolute;
-  right: 3%;
-  padding-top: 10%;
-  text-align: right;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 15%;
   font-size: 2.5em;
   line-height: 1.5em;
-  font-weight: bold;
-  font-family: 'Open Sans Condensed',sans-serif;
+  text-align: center;
 }
 
 .main-section {
@@ -503,14 +507,10 @@ html {
 }
 
 .superhero {
-    width: 400px;
-    height: 600px;
-    font-size: 0.8em;
-    line-height: 1.2em;
-    font-style: italic;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 20%
     word-wrap: break-word;
     word-break: break-word;
 }
@@ -573,23 +573,19 @@ html {
 }
 
 /* media queries */
-/* xs up */
+/* xs up (phone portrait) */
 @media only screen {
-  .introduction {
-    font-size: 1.5em;
-  }
+  
   .main-section {
     padding: 2em 20px;
   }
-  .superhero {
-    width: 200px;
-    top: 0px;
-  }
+  
   .logo {
     margin-top: 18px;
   }
   .si-icon-hamburger-cross {
     display: block;
+    right: 6%;
   }
   .main-nav-list {
     right: 38px;
@@ -602,16 +598,12 @@ html {
     font-size: 26px;
   }
 }
-/* small up */
+/* small up (phone landscape) */
 @media only screen and (min-width: 40.063em) {
   .introduction {
     font-size: 1.5em;
   }
-  .superhero {
-    width: 400px;
-    left: -10px;
-    top: 60px;
-  }
+  
   .main-nav-list {
     right: 68px;
     width: auto;
@@ -622,19 +614,20 @@ html {
   h1 {
     font-size: 36px;
   }
+  .si-icon-hamburger-cross {
+    right: 4%;
+  }
 }
-/* medium up */
+/* medium up (tablets) */
 @media only screen and (min-width: 64.063em) {
   .introduction {
     font-size: 1.8em;
+    text-align: left;
   }
   .main-section {
     padding: 2em 20px;
   }
-  .superhero {
-    position: relative;
-    margin: 0 auto;
-  }
+  
   .si-icon-hamburger-cross {
     display: none;
   }
@@ -643,7 +636,7 @@ html {
   display: block;
 }
 }
-/* large up */
+/* large up (desktop) */
 @media only screen and (min-width: 90.063em) {
   .introduction {
     position: static;
@@ -653,11 +646,9 @@ html {
   .main-section {
     padding: 2em 40px;
   }
-  .superhero {
-    left: 2%;
-  }
+  
 }
-/* xlarge up */
+/* xlarge up (larger desktop) */
 @media only screen and (min-width: 120.063em) {
   .introduction {
     font-size: 2em;
@@ -666,7 +657,5 @@ html {
   .main-section {
     padding: 2em 80px;
   }
-  .superhero {
-    left: 7%;
-  }
+  
 }
