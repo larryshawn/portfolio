@@ -8,12 +8,34 @@
 //     }
 // });
 
+$(".si-icon").click(function(){
+        $(".main-nav-list").toggle();
+    });
+
 $(window).scroll(function() {
-   var hT = $('#hero-container').offset().top,
-       hH = $('#hero-container').outerHeight(),
+   var hT = $('#hero').offset().top,
+       hH = $('#hero').outerHeight(),
        wH = $(window).height(),
        wS = $(this).scrollTop();
    if (wS > (hT+hH-wH)){
        console.log('you have scrolled to the h1!');
    }
+});
+
+
+
+// Smooth scroll to anchors
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });

@@ -20,7 +20,7 @@
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-f21122b4-2f7e-40ad-a640-74803c91b1bd-300.jpg",
     "website": "http://larryshawn.github.io/300movie/"
   }, {
-    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically coded by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. It is fully responsive and supports all major browsers.",
+    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. It is fully responsive and supports all major browsers.",
     "name": "Portfolio",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-ae119685-9484-4ba0-9a0e-ca4e8f765502-portfolio.jpg",
     "website": "http://larryshawn.github.io/portfolio/"

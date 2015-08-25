@@ -1,24 +1,51 @@
 body {
-  background-color: black;
   color: white;
   font-family: helvetica,Arial,sans-serif;
+  background: slategray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+ol, ul {
+    list-style: none;
 }
 
 .center {
   text-align: center;
 }
 
-#nav-header {
-  background-color: #333;
-  height: 52px;
-  font-size: 20px;
-  font-weight: lighter;
-  padding-left: 25px;
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 }
 
-/* Visited links under #nav-header */
-#nav-header a, a:visited {
-  text-decoration: none;
+.main-nav {
+    float: right;
+    margin-right: 3%;
+    z-index: 10;
+
+}
+
+.green {
+    background: #43984d;
+}
+
+.light-blue {
+    background: #52BCCE;
+}
+
+.red {
+    background: #E75252;
+}
+
+.yellow {
+    background: #FFCA60;
 }
 
 #subtitle {
@@ -35,6 +62,12 @@ body {
   max-width: 300px;
   padding-left: 0;
   padding-right: 0;
+}
+
+#hero-container{
+  height: 100%;
+  width: 100%;
+  position:relative;
 }
 
 #main-container {
@@ -56,19 +89,6 @@ body {
   background-color: #fff;
   color: #333;
   padding-bottom: 20px;
-}
-
-#hero-container {
-  width: 100%;
-  background-color: #fff;
-  color: #666;
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-#logo-image {
-  width: 100%;
-  max-width: 600px;
 }
 
 #headline-text {
@@ -459,4 +479,173 @@ html {
 }
 .icon-29:hover {
   background: #d9264a;
+}
+
+.introduction {
+  background-color: slategray;
+  position: absolute;
+  right: 3%;
+  padding-top: 10%;
+  text-align: right;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+  font-family: 'Open Sans Condensed',sans-serif;
+}
+
+.main-section {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    border-bottom: 1px solid #c89649;
+    padding: 2em 10%;
+    box-sizing: border-box;
+}
+
+.superhero {
+    width: 400px;
+    height: 600px;
+    font-size: 0.8em;
+    line-height: 1.2em;
+    font-style: italic;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 10px 10px 10px 3%;
+    display: block;
+    border-radius: 26%;
+    box-shadow: 1px 1px 3px 0 rgba(255, 255, 255, .6);
+}
+
+.main-nav li {
+    float: left;
+    box-shadow: 1px 1px 5px 0 #333;
+    border-radius: 3px;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: -0.5em;
+    transition: all 0.5s;
+}
+
+.si-icon-hamburger-cross {
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 4%;
+    transition: 1s all;
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    display: block;
+    cursor: pointer;
+}
+
+.main-nav a {
+    color: #fff;
+    display: block;
+    width: 7em;
+    padding: 0.8em 0 0.3em 0;
+    text-align: center;
+}
+
+.main-nav-list {
+  position: absolute;
+  right: 68px;
+  top: 16px;
+  transition: 0.5s all;
+  display: none;
+}
+.main-nav-list>li {
+  top: 0;
+  margin: 10px 0;
+  width: 100px;
+}
+.main-nav-list>li>a {
+  padding: 0.5em 1em;
+}
+
+/* media queries */
+/* xs up */
+@media only screen {
+  .introduction {
+    font-size: 1.5em;
+  }
+  .main-section {
+    padding: 2em 20px;
+  }
+  .superhero {
+    width: 400px;
+    left: -10px;
+  }
+  .logo {
+    margin-top: 18px;
+  }
+  .si-icon-hamburger-cross {
+    display: block;
+  }
+}
+/* small up */
+@media only screen and (min-width: 40.063em) {
+  .introduction {
+    font-size: 1.5em;
+  }
+  .superhero {
+    width: 400px;
+    left: -10px;
+  }
+}
+/* medium up */
+@media only screen and (min-width: 64.063em) {
+  .introduction {
+    font-size: 1.8em;
+  }
+  .main-section {
+    padding: 2em 20px;
+  }
+  .superhero {
+    position: relative;
+    margin: 0 auto;
+  }
+  .si-icon-hamburger-cross {
+    display: none;
+  }
+  .main-nav-list {
+  right: 0%;
+  display: block;
+}
+}
+/* large up */
+@media only screen and (min-width: 90.063em) {
+  .introduction {
+    position: static;
+    text-align: center;
+    padding-top: 10%;
+  }
+  .main-section {
+    padding: 2em 40px;
+  }
+  .superhero {
+    left: 2%;
+  }
+}
+/* xlarge up */
+@media only screen and (min-width: 120.063em) {
+  .introduction {
+    font-size: 2em;
+    padding-top: 20%;
+  }
+  .main-section {
+    padding: 2em 80px;
+  }
+  .superhero {
+    left: 7%;
+  }
 }
