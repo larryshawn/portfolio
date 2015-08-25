@@ -551,7 +551,6 @@ html {
 .main-nav a {
     color: #fff;
     display: block;
-    width: 7em;
     padding: 0.8em 0 0.3em 0;
     text-align: center;
 }
@@ -602,7 +601,7 @@ html {
     width: 100%;
   }
   .main-nav-list>li {
-    width: 88px;
+    width: 80px;
   }
   h1 {
     font-size: 26px;
