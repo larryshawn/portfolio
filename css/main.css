@@ -579,6 +579,10 @@ html {
   .main-section {
     padding: 2em 20px;
   }
+
+  .superhero {
+    width: 80%;
+  }
   
   .logo {
     margin-top: 18px;
