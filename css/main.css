@@ -583,7 +583,7 @@ html {
   }
   .superhero {
     width: 200px;
-    top: 34px;
+    top: 0px;
   }
   .logo {
     margin-top: 18px;
@@ -610,6 +610,7 @@ html {
   .superhero {
     width: 400px;
     left: -10px;
+    top: 60px;
   }
   .main-nav-list {
     right: 68px;
