@@ -580,6 +580,12 @@ html {
     padding: 2em 20px;
   }
 
+  .introduction p {
+    font-size: .6em;
+    line-height: 0em;
+    margin-bottom: -10px;
+  }
+
   .superhero {
     width: 80%;
   }
