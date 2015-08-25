@@ -582,14 +582,21 @@ html {
     padding: 2em 20px;
   }
   .superhero {
-    width: 400px;
-    left: -10px;
+    width: 200px;
+    top: 34px;
   }
   .logo {
     margin-top: 18px;
   }
   .si-icon-hamburger-cross {
     display: block;
+  }
+  .main-nav-list {
+    right: 38px;
+    width: 100%;
+  }
+  .main-nav-list>li {
+    width: 88px;
   }
 }
 /* small up */
@@ -600,6 +607,13 @@ html {
   .superhero {
     width: 400px;
     left: -10px;
+  }
+  .main-nav-list {
+    right: 68px;
+    width: auto;
+  }
+  .main-nav-list>li {
+    width: 100px;
   }
 }
 /* medium up */
