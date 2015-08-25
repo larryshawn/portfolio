@@ -598,6 +598,9 @@ html {
   .main-nav-list>li {
     width: 88px;
   }
+  h1 {
+    font-size: 26px;
+  }
 }
 /* small up */
 @media only screen and (min-width: 40.063em) {
@@ -614,6 +617,9 @@ html {
   }
   .main-nav-list>li {
     width: 100px;
+  }
+  h1 {
+    font-size: 36px;
   }
 }
 /* medium up */
