@@ -8,7 +8,7 @@
 //     }
 // });
 
-$(".si-icon svg g").click(function(){
+$(".si-icon svg").click(function(){
         $(".main-nav-list").toggle();
     });
 
