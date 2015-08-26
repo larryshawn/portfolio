@@ -629,16 +629,16 @@ html {
     height: 64px;
   }
   .main-nav-list {
-    right: 38px;
-    width: 100%;
+    right: 0px;
+    width: 124px;
+    top: 70px;
   }
   .main-nav-list>li {
     width: 80px;
   }
   .flex {
   display: inline-block;!important;
-  top: -8px!important;
-}
+  }
   h1 {
     font-size: 26px;
   }
@@ -650,14 +650,13 @@ html {
   }
 
   .introduction p {
-  font-size: 1.3em;
-  line-height: 1em;
-  margin-bottom: 0px;
-}
+    font-size: 1.3em;
+    line-height: 1em;
+    margin-bottom: 0px;
+  }
   
   .main-nav-list {
-    right: 68px;
-    width: auto;
+    width: 143px;
   }
   .main-nav-list>li {
     width: 100px;
@@ -688,9 +687,17 @@ html {
     display: none;
   }
   .main-nav-list {
-  right: 0%;
-  display: block;
-}
+    right: 0px !important;
+    width: 100%;
+    top: 16px;
+    float: right;
+    position: relative;
+    display: block;
+  }
+  .main-nav-list > li {
+    width: 100px;
+    margin: 0 4px;
+  }
 }
 /* large up (desktop) */
 @media only screen and (min-width: 90.063em) {
