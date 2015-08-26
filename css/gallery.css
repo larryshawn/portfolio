@@ -24,14 +24,30 @@ body {
   background-repeat: no-repeat;
   width: 80%;
   height: 315px;
-  box-shadow: 3px 3px 15px;
+  border: 4px solid white;
   overflow: hidden;
-  border-radius: 1px;
+  border-radius: 10px;
   max-width: 315px;
   margin: 15px;
   cursor: pointer;
 }
 
+/* Horizontal image gallery */
+.gallery {
+  overflow-x: scroll;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 25px;
+}
+/* I want to have neighboring images peek through.
+   All <img> elements underneath .gallery
+   are shrunk to 90% width. */
+.gallery > div {
+  width: 90%;
+}
+.gallery::-webkit-scrollbar { 
+  display: none; 
+}
 .website {
   padding: 10px;
 }
@@ -56,7 +72,7 @@ body {
 }
 
 .description {
-  height: 186px;
+  height: 180px;
   overflow: auto;
   font-size: 15px;
   color: #999;

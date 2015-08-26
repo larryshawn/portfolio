@@ -32,6 +32,22 @@ ol, ul {
 
 }
 
+.button-style {
+  background-color: rgba(169, 169, 169, 0.75);
+  border-radius: 10px!important;
+}
+
+.button-style a {
+  text-decoration: none;
+}
+
+.button-style:hover {
+  /* i want them to glow */
+  box-shadow: 1px 1px 5px 0 #38E;
+  transition: all .1s;
+  text-decoration: none!important;        
+}
+
 .green {
     background: #43984d;
 }
@@ -40,8 +56,8 @@ ol, ul {
     background: #52BCCE;
 }
 
-.red {
-    background: #E75252;
+.teal {
+    background: #52BCCE;
 }
 
 .yellow {
@@ -79,7 +95,7 @@ ol, ul {
 
 #alternate-container {
   width: 100%;
-  background-color: #000;
+  background-color: #FFC752;
   color: #ebebeb;
   padding-bottom: 20px;
 }
@@ -126,9 +142,10 @@ ol, ul {
   background-color: white;
   font-size: 18px;
   font-weight: lighter;
-  color: #666;
+  color: #52BCCE;
   width: 100%;
   padding: 20px;
+  border-top: 4px solid #52BCCE;
 }
 
 #footer a {
