@@ -75,6 +75,8 @@ body {
   height: 180px;
   overflow: auto;
   font-size: 15px;
+  overflow-y: scroll;
+  white-space: normal;  
   color: #999;
   text-align: left;
   -webkit-overflow-scrolling: touch;
