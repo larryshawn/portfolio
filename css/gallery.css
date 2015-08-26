@@ -45,8 +45,8 @@ body {
   font-family: sans-serif;
   padding: 25px;
   position: relative;
-  transform: translateY(-365px);
-  transition: transform 750ms;
+  top: -365px;
+  transition: all 750ms;
 }
 
 .name {
