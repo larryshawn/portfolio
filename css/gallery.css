@@ -22,7 +22,7 @@ body {
   display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 80%;
+  width: 100%;
   height: 315px;
   border: 4px solid white;
   overflow: hidden;
@@ -43,7 +43,7 @@ body {
    All <img> elements underneath .gallery
    are shrunk to 90% width. */
 .gallery > div {
-  width: 90%;
+  width: 100%;
 }
 .gallery::-webkit-scrollbar { 
   display: none; 
