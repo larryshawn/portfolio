@@ -588,9 +588,6 @@ html {
 .flex {
   display: flex!important;
   top: -8px!important;
-  -webkit-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
 }
 
 .main-nav-list {
@@ -632,7 +629,7 @@ html {
   }
   .si-icon-hamburger-cross {
     display: block;
-    right: 6%;
+    right: 0;
     width: 64px;
     height: 64px;
   }
