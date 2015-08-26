@@ -15,7 +15,7 @@ body {
 #thumbnails-container {
   text-align: center;
   max-width: 1050px;
-  margin: 65px auto;
+  margin: 0px auto 10px auto;
 }
 
 .movie-thumbnail {
