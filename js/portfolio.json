@@ -1,14 +1,14 @@
 {
   "works": [ {
-    "description": "Katoomba is my creation from thought to production. It's using parallax scrolling in mobile first design. This website is fully responsive and supports all major browsers.",
-    "name": "Katoomba",
-    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-80dd2b46-8300-40a3-bf11-51ea50667b8b-katoomba.jpg",
-    "website": "http://larryshawn.github.io/parallax/"
-  }, {
     "description": "Emporium is an online retail store. Together with a team of developers I take care of the daily requests to add new features and squash bugs. We work in an agile environment. There are two versions of this website, one for mobile and the other for desktop.",
     "name": "Emporium",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-c72689f4-04b6-4290-b37d-0473e232f23c-emporium.jpg",
     "website": "http://emporium.com"
+  }, {
+    "description": "Katoomba is my creation from thought to production. It's using parallax scrolling in mobile first design. This website is fully responsive and supports all major browsers.",
+    "name": "Katoomba",
+    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-80dd2b46-8300-40a3-bf11-51ea50667b8b-katoomba.jpg",
+    "website": "http://larryshawn.github.io/parallax/"
   }, {
     "description": "Demonstrating greatness through simplicity, I replicated Facebook's Parse product landing page. This website is fully responsive and supports all major browsers.",
     "name": "Parse Landing Page",
@@ -16,13 +16,13 @@
     "website": "http://larryshawn.github.io/parse/"
   }, {
     "description": "This mobile first design is coded in HTML5 and CSS3 on a bootstrap framework. Here I incorporate the trailer movie and a purely html/css image slider of key images. This website is fully responsive and supports all major browsers.",
-    "name": "300 Movie Landing Page",
+    "name": "300 Movie",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-f21122b4-2f7e-40ad-a640-74803c91b1bd-300.jpg",
     "website": "http://larryshawn.github.io/300movie/"
   }, {
-    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. It is fully responsive and supports all major browsers.",
+    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. I also take advantage of SVG vector images and animation. It is fully responsive and supports all major browsers.",
     "name": "Portfolio",
-    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-ae119685-9484-4ba0-9a0e-ca4e8f765502-portfolio.jpg",
+    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-05e9cd67-0230-4bec-ab05-f0b0302a481d-portfolio.jpg",
     "website": "http://larryshawn.github.io/portfolio/"
   } ]
 }
