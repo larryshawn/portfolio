@@ -9,8 +9,8 @@
 // });
 
 $(".si-icon svg").click(function(){
-        $(".main-nav-list").toggle();
-    });
+  $(".main-nav-list").toggleClass( "flex" );
+});
 
 $(window).scroll(function() {
    var hT = $('#hero').offset().top,
