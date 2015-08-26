@@ -1,4 +1,7 @@
 "use strict";
+$( document ).ready(function() {
+  $('.mask').css('transform', 'translateY(-365px)');
+});
 function fetchData() {
   var rawTemplate = $('#music-template').html();
   var resultString = '';
