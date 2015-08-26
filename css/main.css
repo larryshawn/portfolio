@@ -636,7 +636,7 @@ html {
     width: 80px;
   }
   .flex {
-  display: flex!important;
+  display: inline-flex!important;
   top: -8px!important;
 }
   h1 {
@@ -662,10 +662,6 @@ html {
   .main-nav-list>li {
     width: 100px;
   }
-  .flex {
-  display: flex;
-  top: -8px;
-}
   h1 {
     font-size: 36px;
   }
