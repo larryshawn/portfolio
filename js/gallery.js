@@ -29,7 +29,7 @@ function handleClickEvents() {
   // If any close button gets clicked, slide the mask curtain up.
   $('.close-btn').click(function(e) {
     var mask = $(e.target).parent();
-    mask.css('transform', 'translateY(-365px)');
+    mask.css('top', '-365px');
   });
 }
 
