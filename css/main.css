@@ -585,11 +585,6 @@ html {
     text-align: center;
 }
 
-.flex {
-  display: flex!important;
-  top: -8px!important;
-}
-
 .main-nav-list {
   position: absolute;
   right: 68px;
@@ -640,6 +635,10 @@ html {
   .main-nav-list>li {
     width: 80px;
   }
+  .flex {
+  display: flex!important;
+  top: -8px!important;
+}
   h1 {
     font-size: 26px;
   }
@@ -663,6 +662,10 @@ html {
   .main-nav-list>li {
     width: 100px;
   }
+  .flex {
+  display: flex;
+  top: -8px;
+}
   h1 {
     font-size: 36px;
   }
