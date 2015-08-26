@@ -636,7 +636,7 @@ html {
     width: 80px;
   }
   .flex {
-  display: inline-flex!important;
+  display: inline-block;!important;
   top: -8px!important;
 }
   h1 {
