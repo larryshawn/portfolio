@@ -37,7 +37,6 @@ body {
   overflow-x: scroll;
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
-  margin-bottom: 25px;
 }
 /* I want to have neighboring images peek through.
    All <img> elements underneath .gallery

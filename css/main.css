@@ -18,6 +18,10 @@ ol, ul {
   text-align: center;
 }
 
+.pb-20 {
+  padding-bottom: 20px;
+}
+
 .header {
     width: 100%;
     position: fixed;
@@ -80,6 +84,12 @@ ol, ul {
   padding-right: 0;
 }
 
+#portfolio-header {
+  text-align: center;
+  background-color: rgb(255, 199, 82);
+  margin-bottom: -50px;
+}
+
 #hero-container{
   height: 100%;
   width: 100%;
@@ -88,9 +98,10 @@ ol, ul {
 
 #main-container {
   width: 100%;
-  background-color: slategray;
+  background-color: rgba(113, 203, 223, 0.17);
   padding-bottom: 20px;
   line-height: 1.8em;
+  color: #AEC4DB;
 }
 
 #alternate-container {
