@@ -75,12 +75,12 @@ ol, ul {
 }
 
 #main-container h1, #portfolio-header h1 {
-  font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  font-size: 75px;
-  line-height: 1em;
-  color: #fef6e9;
-  padding-bottom: 30px;
-  padding-top: 10px;
+  font-family: monospace;
+    font-size: 40px;
+    line-height: 1em;
+    color: white;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
 
 .mask > .description {
@@ -105,19 +105,11 @@ ol, ul {
   position:relative;
 }
 
-#main-container {
-  width: 100%;
-  background-color: rgba(113, 203, 223, 0.17);
-  padding-bottom: 20px;
-  line-height: 1.8em;
-  color: #AEC4DB;
-}
-
 #alternate-container {
   width: 100%;
   background-color: #FFC752;
   color: #ebebeb;
-  padding-bottom: 20px;
+  padding-bottom: 80px;
 }
 
 #contact-container {
@@ -165,7 +157,7 @@ ol, ul {
   color: #52BCCE;
   width: 100%;
   padding: 20px;
-  border-top: 4px solid #52BCCE;
+  /*border-top: 4px solid #52BCCE;*/
 }
 
 #footer a {
@@ -623,6 +615,18 @@ html {
     padding: 2em 20px;
   }
 
+  .powers {
+    width: 100%;
+  }
+
+  #main-container {
+  width: 100%;
+  background-color: rgba(113, 203, 223, 0.17);
+  padding: 20px 20px;
+  line-height: 1.8em;
+  color: #AEC4DB;
+}
+
   .introduction p {
     font-size: .6em;
     line-height: 0em;
@@ -667,6 +671,10 @@ html {
     font-size: 1.5em;
   }
 
+  .powers {
+    width: 130%;
+  }
+
   .introduction p {
     font-size: 1.3em;
     line-height: 1em;
@@ -684,6 +692,9 @@ html {
   }
   .si-icon-hamburger-cross {
     right: 4%;
+  }
+  #main-container {
+    padding: 20px 80px;
   }
 }
 /* medium up (tablets) */
