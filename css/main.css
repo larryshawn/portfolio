@@ -87,6 +87,7 @@ ol, ul {
 #portfolio-header {
   text-align: center;
   background-color: rgb(255, 199, 82);
+  width: 100%;
 }
 
 #hero-container{
@@ -510,6 +511,10 @@ html {
 
 .si-icon-hamburger-cross svg {
   padding-right: 10px;
+}
+
+.si-icon-hamburger-cross svg g path  {
+  color: #ebebeb;
   text-shadow: -1px 1px 1px #000;
 }
 
