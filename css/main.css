@@ -510,6 +510,7 @@ html {
 
 .si-icon-hamburger-cross svg {
   padding-right: 10px;
+  text-shadow: -1px 1px 1px #000;
 }
 
 /* elements that are using media queries */
