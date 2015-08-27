@@ -73,6 +73,17 @@
 		Snap.load( this.config.url, function (f) {
 			var g = f.select( 'g' );
 			self.svg.append( g );
+			// adding ability to change color
+			var paths = g.selectAll("path");
+			paths.forEach(function(p){
+			if(p.attr('fill') != 'none'){
+				p.attr({fill: self.options.color});
+				}
+				if(p.attr('stroke') != 'none'){
+					p.attr({stroke: self.options.borderColor});
+				}
+			});
+			// end color addition
 			self.options.onLoad();
 			self._initEvents();
 			if( self.reverse ) {
@@ -87,7 +98,9 @@
 		evtoggle : 'click', // click || mouseover
 		size : { w : 64, h : 64 },
 		onLoad : function() { return false; },
-		onToggle : function() { return false; }
+		onToggle : function() { return false; },
+		color: '#000000',
+		borderColor: '#ebebeb'
 	};
 
 	svgIcon.prototype._initEvents = function() {
