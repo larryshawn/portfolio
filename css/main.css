@@ -74,6 +74,15 @@ ol, ul {
   font-style: italic;
 }
 
+#main-container h1, #portfolio-header h1 {
+  font-family: Ballpark, Palatino, "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 75px;
+  line-height: 1em;
+  color: #fef6e9;
+  padding-bottom: 30px;
+  padding-top: 10px;
+}
+
 .mask > .description {
   left: 0;
 }
@@ -593,10 +602,9 @@ html {
 
 .main-nav-list {
   position: absolute;
-  right: 68px;
+  right: -104px;
   top: 16px;
   transition: 0.5s all;
-  display: none;
 }
 .main-nav-list>li {
   top: 0;
@@ -635,7 +643,7 @@ html {
     height: 64px;
   }
   .main-nav-list {
-    right: 0px;
+    right: -104px;
     width: 124px;
     top: 70px;
   }
@@ -644,6 +652,10 @@ html {
   }
   .flex {
   display: inline-block;!important;
+  right: 0px!important;
+  -webkit-transition: 569ms all ease;
+  -o-transition: 569ms all ease;
+  transition: 569ms all ease;
   }
   h1 {
     font-size: 26px;
