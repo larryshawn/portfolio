@@ -640,12 +640,7 @@ html {
   .logo {
     margin-top: 18px;
   }
-  .si-icon-hamburger-cross {
-    display: block;
-    right: 0;
-    width: 64px;
-    height: 64px;
-  }
+  
   .main-nav-list {
     right: -104px;
     width: 124px;
@@ -691,7 +686,10 @@ html {
     font-size: 36px;
   }
   .si-icon-hamburger-cross {
+    display: block;
     right: 4%;
+    width: 64px;
+    height: 64px;
   }
   #main-container {
     padding: 20px 80px;
