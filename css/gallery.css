@@ -42,10 +42,10 @@ body {
    All <img> elements underneath .gallery
    are shrunk to 90% width. */
 .gallery > div {
-  width: 100%;
+  width: 95%;
 }
 .gallery::-webkit-scrollbar { 
-  /*display: none; */
+  display: none; 
 }
 .website {
   padding: 10px;
@@ -84,6 +84,15 @@ body {
 /* Hide the scrollbars in a gallery. Only works in webkit browsers */
 .description::-webkit-scrollbar { 
     display: none; 
+}
+
+/* scrolling area indicator */
+#scroll-indicator {
+  position: absolute;
+  right: -29px;
+  bottom: -4%;
+  padding: 5% 1%;
+  background-color: rgba(112, 128, 144, 0.7);
 }
 
 .close-btn {
