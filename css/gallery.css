@@ -45,7 +45,7 @@ body {
   width: 100%;
 }
 .gallery::-webkit-scrollbar { 
-  display: none; 
+  /*display: none; */
 }
 .website {
   padding: 10px;
