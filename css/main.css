@@ -162,6 +162,7 @@ ol, ul {
 #footer a {
   color: #666;
   margin-left: 15px;
+  text-decoration: none;
 }
 
 #tagline1 {
@@ -706,6 +707,12 @@ html {
     width: 100px;
     margin: 0 4px;
   }
+  .gallery {
+  white-space: normal!important;
+  }
+  .gallery > div {
+    width: 100%!important;
+}
 }
 /* large up (desktop) */
 @media only screen and (min-width: 90.063em) {
