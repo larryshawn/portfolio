@@ -12,6 +12,22 @@ $(".si-icon svg").click(function(){
   $(".main-nav-list").toggleClass( "flex" );
 });
 
+// on vertical scroll up
+var lastScrollTop = 0;
+$(window).scroll(function(event){
+   var st = $(this).scrollTop();
+   if (st > lastScrollTop){
+       // downscroll code
+      $('header').fadeOut();
+   } else {
+      // upscroll code
+      $('header').fadeIn();
+
+   }
+   lastScrollTop = st;
+});
+
+// scroll to certain div
 $(window).scroll(function() {
    var hT = $('#hero').offset().top,
        hH = $('#hero').outerHeight(),

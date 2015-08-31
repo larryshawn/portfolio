@@ -19,6 +19,7 @@ function handleClickEvents() {
   $('.movie-thumbnail').click(function(e) {
     var mask = $(e.target).children('.mask');
     mask.css('top', '0');
+    // $('header').fadeOut();
   });
 
   // $('.mask').mouseout(function(e) {
