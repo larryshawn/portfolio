@@ -25,14 +25,13 @@ ol, ul {
 .header {
     width: 100%;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
 }
 
 .main-nav {
     float: right;
     margin-right: 3%;
-    z-index: 10;
 
 }
 
