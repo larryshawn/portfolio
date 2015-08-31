@@ -19,7 +19,15 @@ function handleClickEvents() {
   $('.movie-thumbnail').click(function(e) {
     var mask = $(e.target).children('.mask');
     mask.css('top', '0');
-    // $('header').fadeOut();
+    $('header').fadeOut();
+    // on scrolling past a certain distance...
+$(window).scroll(function() {
+
+    //if I scroll more than 100px...
+    if($(window).scrollTop() > 100){
+      $('header').fadeIn();
+    }
+});
   });
 
   // $('.mask').mouseout(function(e) {

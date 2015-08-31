@@ -12,31 +12,40 @@ $(".si-icon svg").click(function(){
   $(".main-nav-list").toggleClass( "flex" );
 });
 
-// on vertical scroll up
-var lastScrollTop = 0;
-$(window).scroll(function(event){
-   var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-       // downscroll code
-      $('header').fadeOut();
-   } else {
-      // upscroll code
-      $('header').fadeIn();
+// // on vertical scroll up or down
+// var lastScrollTop = 0;
+// $(window).scroll(function(event){
+//    var st = $(this).scrollTop();
+//    if (st > lastScrollTop){
+//        // downscroll code
+//       $('header').fadeOut();
+//    } else {
+//       // upscroll code
+//       $('header').fadeIn();
 
-   }
-   lastScrollTop = st;
-});
+//    }
+//    lastScrollTop = st;
+// });
 
-// scroll to certain div
-$(window).scroll(function() {
-   var hT = $('#hero').offset().top,
-       hH = $('#hero').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-       console.log('you have scrolled to the h1!');
-   }
-});
+// // scroll to certain div
+// $(window).scroll(function() {
+//    var hT = $('#hero').offset().top,
+//        hH = $('#hero').outerHeight(),
+//        wH = $(window).height(),
+//        wS = $(this).scrollTop();
+//    if (wS > (hT+hH-wH)){
+//        console.log('you have scrolled to the h1!');
+//    }
+// });
+
+// // on scrolling past a certain distance...
+// $(window).scroll(function() {
+
+//     //if I scroll more than 1000px...
+//     if($(window).scrollTop() > 1000){
+//          //do whatever
+//     }
+// });
 
 
 
