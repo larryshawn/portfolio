@@ -68,6 +68,9 @@
           Every day I encounter new challenges, which enhances my knowledge of markup, <strong>JavaScript</strong> and <strong>jQuery</strong>.
         </p> 
         <p>
+          I am in love with the work I do. Most evenings you'll find me coding personal projects and learning new techniques.
+        </p>
+        <p>
           I am also in love with <strong>HTML5</strong> and <strong>CSS3</strong>. Even though we spend most of the time together creating beautiful pieces of different UIs, I enjoy learning other technologies.
         </p>
         <p>
@@ -172,7 +175,12 @@
     <div class="movie-thumbnail" style="background-image: url({{ thumbnail }})">
       <div class="mask">
         <div class="name">{{ name }}</div>
-        <div class="description">{{ description }}</div>
+        <div class="text-section">
+          <div class="roles"><span class="title-highlight">Roles:</span> {{ roles }}</div>
+          <div class="stack"><span class="title-highlight">Stack:</span> {{ stack }}</div>
+          <div class="features"><span class="title-highlight">Features:</span> {{ features }}</div>
+          <div class="description">{{ description }}</div>
+        </div>
         <div class="website"><a href="{{ website }}" class="btn btn-primary btn-lg">View Project</a></div>
         <img class="close-btn" src="images/close.png">
       </div>

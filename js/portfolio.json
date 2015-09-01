@@ -1,30 +1,48 @@
 {
   "works": [ {
+    "roles": "Front End Developer",
+    "stack": "HTML5, CSS3, javaScript, jQuery, bootstrap, LESS. ",
+    "features": "desktop, mobile. ",
     "description": "Emporium is an online retail store. Together with a team of developers I take care of the daily requests to add new features and squash bugs. We work in an agile environment. There are two versions of this website, one for mobile and the other for desktop.",
     "name": "Emporium",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-c72689f4-04b6-4290-b37d-0473e232f23c-emporium.jpg",
     "website": "http://emporium.com"
   }, {
+    "roles": "Visual Designer, UX, Front End Developer",
+    "stack": "HTML5, CSS3, video, slider",
+    "features": "parallax scrolling, responsive, mobile first.",
     "description": "Katoomba is my creation from thought to production. It's using parallax scrolling in mobile first design. This website is fully responsive and supports all major browsers.",
     "name": "Katoomba",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-80dd2b46-8300-40a3-bf11-51ea50667b8b-katoomba.jpg",
     "website": "http://larryshawn.github.io/parallax/"
   }, {
+    "roles": "Front End Developer",
+    "stack": "HTML5, CSS3",
+    "features": "responsive, mobile first. ",
     "description": "Demonstrating greatness through simplicity, I replicated Facebook's Parse product landing page. This website is fully responsive and supports all major browsers.",
     "name": "Parse Landing Page",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-68a6aff5-13b0-4d28-b71d-afad25ec39fc-parse.gif",
     "website": "http://larryshawn.github.io/parse/"
   }, {
+    "roles": "Visual Designer, UX, Front End Developer",
+    "stack": "HTML5, CSS3, video, slider",
+    "features": "responsive, mobile first. ",
     "description": "This mobile first design is coded in HTML5 and CSS3 on a bootstrap framework. Here I incorporate the trailer movie and a purely html/css image slider of key images. This website is fully responsive and supports all major browsers.",
     "name": "300 Movie",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-f21122b4-2f7e-40ad-a640-74803c91b1bd-300.jpg",
     "website": "http://larryshawn.github.io/300movie/"
   }, {
+    "roles": "Visual Designer, Front End Developer",
+    "stack": "WordPress, Genesis framework, CSS3, media queries",
+    "features": "Fully responsive.",
     "description": "I built this in wordpress on the genessis framework for one of my clients in San Francisco, The Barbary Coast News. It too is fully responsive and supports all major browsers.",
     "name": "Barbary Coast News",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-674afc68-1138-476f-abe8-5761874f097c-barbary-coast.jpg",
     "website": "http://www.barbarycoastnews.com/"
   }, {
+    "roles": "Visual Designer, UX, Front End Developer",
+    "stack": "HTML5, CSS3, javaScript, jQuery, firebase, parse, mustache templates, media queries",
+    "features": "responsive, vector (SVG) images, mobile first. ",
     "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. I also take advantage of SVG vector images and animation. It is fully responsive and supports all major browsers.",
     "name": "Portfolio",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-3f6d0f31-0a28-4017-8293-4faeae462de8-portfolio.jpg",

@@ -49,6 +49,7 @@ body {
 }
 .website {
   padding: 10px;
+  bottom: 20px;
 }
 
 .mask {
@@ -61,7 +62,24 @@ body {
   padding: 25px;
   position: relative;
   top: -365px;
+  white-space: normal;
+  border-radius: 10px;
   transition: all 750ms;
+}
+
+.text-section {
+  height: 160px;
+  overflow: auto;
+  font-size: 14px;
+  overflow-y: scroll;
+  white-space: normal;  
+  text-align: left;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide the scrollbars in a gallery. Only works in webkit browsers */
+.text-section::-webkit-scrollbar { 
+    display: none; 
 }
 
 .name {
@@ -70,15 +88,25 @@ body {
   text-align: left;
 }
 
+.roles, .stack, .features {
+    text-align: left;
+    padding-bottom: 8px;
+    color: #E0E0E0;
+    font-size: 14px;
+}
+.title-highlight {
+  color: white;
+}
 .description {
-  height: 180px;
+  height: 84px;
   overflow: auto;
-  font-size: 15px;
+  font-size: 16px;
   overflow-y: scroll;
   white-space: normal;  
   color: #999;
   text-align: left;
   -webkit-overflow-scrolling: touch;
+  display: none;
 }
 
 /* Hide the scrollbars in a gallery. Only works in webkit browsers */
