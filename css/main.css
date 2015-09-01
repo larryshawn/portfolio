@@ -758,9 +758,11 @@ html {
   }
   .large-screen-super-powers {
     display: block;
+    text-align: center;
   }
   .small-screen-super-powers {
     display: none;
+    text-align: center;
   }
   .margin-center {
     margin: 0;
