@@ -565,6 +565,11 @@ html {
   text-align: center;
 }
 
+.about-text p strong {
+  color: #CDE5FE;
+  font-size: 1.2em;
+}
+
 
 /* elements that are using media queries */
 
@@ -765,7 +770,7 @@ html {
     top: 25%;
   }
   .about-text {
-    height: 50%;
+    height: 70%;
     background-color: transparent;
   }
 }
