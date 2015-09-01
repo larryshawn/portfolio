@@ -731,9 +731,6 @@ html {
   .si-icon-hamburger-cross {
     display: none;
   }
-  .about-text {
-    height: 100%;
-  }
   .main-nav-list {
     right: 0px !important;
     width: 100%;
@@ -769,6 +766,7 @@ html {
   }
   .about-text {
     height: 50%;
+    background-color: transparent;
   }
 }
 /* large up (desktop) */
