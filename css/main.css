@@ -706,7 +706,7 @@ html {
 /* small up (phone landscape) */
 @media only screen and (min-width: 40.063em) {
   .powers {
-    width: 100%;
+    width: 50%;
     max-width: 560px;
   }
   
