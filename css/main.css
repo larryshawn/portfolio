@@ -519,6 +519,45 @@ html {
   text-shadow: -1px 1px 1px #000;
 }
 
+.superhero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.introduction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 88%;
+  z-index: 2;
+  margin: 0 auto;
+  margin-top: 15%;
+  font-size: 2.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.introduction p {
+  font-size: 1em;
+  line-height: 0em;
+}
+
+.about-text {
+  height: 50%;
+  overflow-y: scroll;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.about-text::-webkit-scrollbar { 
+  display: none; 
+}
+
+
 /* elements that are using media queries */
 
 
@@ -586,35 +625,6 @@ html {
   padding: 0.5em 1em;
 }
 
-/* trying to remove media queries and make superhero responsive based on height. */
-
-.superhero {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80%;
-}
-
-.introduction {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 88%;
-  z-index: 2;
-  margin: 0 auto;
-  margin-top: 15%;
-  font-size: 2.5em;
-  line-height: 1.5em;
-  text-align: center;
-}
-
-.introduction p {
-  font-size: 1em;
-  line-height: 0em;
-}
-
 /* media queries */
 /* xs up (phone portrait) */
 @media only screen {
@@ -623,12 +633,21 @@ html {
     padding: 2em 20px;
   }
 
+  .margin-center {
+
+  }
+
   .powers {
     width: 100%;
   }
 
+  .large-screen-super-powers {
+    display: none;
+  }
+
   #main-container {
   width: 100%;
+  height: 100%;
   background-color: rgba(113, 203, 223, 0.17);
   padding: 20px 20px;
   line-height: 1.8em;
@@ -653,11 +672,11 @@ html {
     width: 80px;
   }
   .flex {
-  display: inline-block;!important;
-  right: 0px!important;
-  -webkit-transition: 569ms all ease;
-  -o-transition: 569ms all ease;
-  transition: 569ms all ease;
+    display: inline-block;!important;
+    right: 0px!important;
+    -webkit-transition: 569ms all ease;
+    -o-transition: 569ms all ease;
+    transition: 569ms all ease;
   }
   h1 {
     font-size: 26px;
@@ -666,7 +685,7 @@ html {
 /* small up (phone landscape) */
 @media only screen and (min-width: 40.063em) {
   .powers {
-    width: 130%;
+    width: 100%;
   }
   
   .main-nav-list {
@@ -712,14 +731,22 @@ html {
   }
   .gallery > div {
     width: 100%!important;
-}
+  }
+  .large-screen-super-powers {
+    display: block;
+  }
+  .small-screen-super-powers {
+    display: none;
+  }
+  .margin-center {
+    margin: 0;
+  }
 }
 /* large up (desktop) */
 @media only screen and (min-width: 90.063em) {
   .main-section {
     padding: 2em 40px;
   }
-  
 }
 /* xlarge up (larger desktop) */
 @media only screen and (min-width: 120.063em) {
