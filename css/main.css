@@ -646,10 +646,11 @@ html {
   }
 
   .about-text {
-    height: 38%;
+    height: 32%;
     overflow-y: scroll;
     position: relative;
     -webkit-overflow-scrolling: touch;
+    background-color: rgb(22, 40, 50);
   }
 
   .powers {
