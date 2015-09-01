@@ -25,7 +25,7 @@
     "website": "http://larryshawn.github.io/portfolio/"
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
-    "stack": "HTML5, CSS3, video, slider",
+    "stack": "HTML5, CSS3",
     "features": "parallax scrolling, responsive, mobile first.",
     "description": "Katoomba is my creation from thought to production. It's using parallax scrolling in mobile first design. This website is fully responsive and supports all major browsers.",
     "name": "Katoomba",
