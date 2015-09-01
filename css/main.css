@@ -557,6 +557,17 @@ html {
   display: none; 
 }
 
+.superpowers-title {
+  font-family: 'Allan', cursive;
+    font-weight: bold;
+    font-size: 3em;
+    margin: 34px auto 0 auto;
+    text-align: center;
+    color: rgb(205, 229, 254);
+    letter-spacing: 4px;
+    white-space: nowrap;
+}
+
 
 /* elements that are using media queries */
 
@@ -686,6 +697,7 @@ html {
 @media only screen and (min-width: 40.063em) {
   .powers {
     width: 100%;
+    max-width: 560px;
   }
   
   .main-nav-list {
@@ -714,6 +726,9 @@ html {
   .si-icon-hamburger-cross {
     display: none;
   }
+  .about-text {
+    height: 100%;
+  }
   .main-nav-list {
     right: 0px !important;
     width: 100%;
@@ -740,6 +755,12 @@ html {
   }
   .margin-center {
     margin: 0;
+  }
+  .superpowers-title {
+    font-size: 4em;
+  }
+  .introduction {
+    top: 25%;
   }
 }
 /* large up (desktop) */
