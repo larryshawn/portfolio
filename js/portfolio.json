@@ -2,11 +2,22 @@
   "works": [ {
     "roles": "Front End Developer",
     "stack": "HTML5, CSS3, javaScript, jQuery, bootstrap, LESS. ",
-    "features": "desktop, mobile. ",
+    "features": "E-commerce, Forms, Interactive, Payment Processing, Authentication, Desktop, Mobile. ",
     "description": "Emporium is an online retail store. Together with a team of developers I take care of the daily requests to add new features and squash bugs. We work in an agile environment. There are two versions of this website, one for mobile and the other for desktop.",
     "name": "Emporium",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-c72689f4-04b6-4290-b37d-0473e232f23c-emporium.jpg",
     "website": "http://emporium.com"
+  }, { 
+  // adding moneymutual
+
+    "roles": "Front End Developer",
+    "stack": "HTML5, CSS3, javaScript, jQuery",
+    "features": "Forms, Interactive, Payment Processing, Authentication",
+    "description": "Moneymutual is an online lending company. I was on the team from the websites creation. It has complex information gathering forms. It supports all major browsers.",
+    "name": "Moneymutual",
+    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-e228f3c2-aa38-4c1f-a050-51d5beabca68-moneymutual.jpg",
+    "website": "http://moneymutual.com"
+
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
     "stack": "HTML5, CSS3, video, slider",
@@ -15,14 +26,6 @@
     "name": "Katoomba",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-80dd2b46-8300-40a3-bf11-51ea50667b8b-katoomba.jpg",
     "website": "http://larryshawn.github.io/parallax/"
-  }, {
-    "roles": "Front End Developer",
-    "stack": "HTML5, CSS3",
-    "features": "responsive, mobile first. ",
-    "description": "Demonstrating greatness through simplicity, I replicated Facebook's Parse product landing page. This website is fully responsive and supports all major browsers.",
-    "name": "Parse Landing Page",
-    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-68a6aff5-13b0-4d28-b71d-afad25ec39fc-parse.gif",
-    "website": "http://larryshawn.github.io/parse/"
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
     "stack": "HTML5, CSS3, video, slider",
@@ -33,7 +36,7 @@
     "website": "http://larryshawn.github.io/300movie/"
   }, {
     "roles": "Visual Designer, Front End Developer",
-    "stack": "WordPress, Genesis framework, CSS3, media queries",
+    "stack": "WordPress, Genesis framework, CSS3, Media Queries",
     "features": "Fully responsive.",
     "description": "I built this in wordpress on the genessis framework for one of my clients in San Francisco, The Barbary Coast News. It too is fully responsive and supports all major browsers.",
     "name": "Barbary Coast News",
@@ -42,7 +45,7 @@
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
     "stack": "HTML5, CSS3, javaScript, jQuery, firebase, parse, mustache templates, media queries",
-    "features": "responsive, vector (SVG) images, mobile first. ",
+    "features": "Responsive, Vector (SVG) images, Mobile first. ",
     "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. I also take advantage of SVG vector images and animation. It is fully responsive and supports all major browsers.",
     "name": "Portfolio",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-3f6d0f31-0a28-4017-8293-4faeae462de8-portfolio.jpg",

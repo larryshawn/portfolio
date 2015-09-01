@@ -106,7 +106,7 @@ body {
   color: #999;
   text-align: left;
   -webkit-overflow-scrolling: touch;
-  display: none;
+  /*display: none;*/
 }
 
 /* Hide the scrollbars in a gallery. Only works in webkit browsers */
