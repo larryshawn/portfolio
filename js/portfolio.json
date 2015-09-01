@@ -8,8 +8,6 @@
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-c72689f4-04b6-4290-b37d-0473e232f23c-emporium.jpg",
     "website": "http://emporium.com"
   }, { 
-  // adding moneymutual
-
     "roles": "Front End Developer",
     "stack": "HTML5, CSS3, javaScript, jQuery",
     "features": "Forms, Interactive, Payment Processing, Authentication",
@@ -17,7 +15,14 @@
     "name": "Moneymutual",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-e228f3c2-aa38-4c1f-a050-51d5beabca68-moneymutual.jpg",
     "website": "http://moneymutual.com"
-
+    }, {
+    "roles": "Visual Designer, UX, Front End Developer",
+    "stack": "HTML5, CSS3, javaScript, jQuery, firebase, parse, mustache templates, media queries",
+    "features": "Responsive, Vector (SVG) images, JSON, Mobile first. ",
+    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. I also take advantage of SVG vector images and animation. It is fully responsive and supports all major browsers.",
+    "name": "Portfolio",
+    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-3f6d0f31-0a28-4017-8293-4faeae462de8-portfolio.jpg",
+    "website": "http://larryshawn.github.io/portfolio/"
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
     "stack": "HTML5, CSS3, video, slider",
@@ -26,14 +31,6 @@
     "name": "Katoomba",
     "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-80dd2b46-8300-40a3-bf11-51ea50667b8b-katoomba.jpg",
     "website": "http://larryshawn.github.io/parallax/"
-  }, {
-    "roles": "Visual Designer, UX, Front End Developer",
-    "stack": "HTML5, CSS3, video, slider",
-    "features": "responsive, mobile first. ",
-    "description": "This mobile first design is coded in HTML5 and CSS3 on a bootstrap framework. Here I incorporate the trailer movie and a purely html/css image slider of key images. This website is fully responsive and supports all major browsers.",
-    "name": "300 Movie",
-    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-f21122b4-2f7e-40ad-a640-74803c91b1bd-300.jpg",
-    "website": "http://larryshawn.github.io/300movie/"
   }, {
     "roles": "Visual Designer, Front End Developer",
     "stack": "WordPress, Genesis framework, CSS3, Media Queries",
@@ -44,11 +41,11 @@
     "website": "http://www.barbarycoastnews.com/"
   }, {
     "roles": "Visual Designer, UX, Front End Developer",
-    "stack": "HTML5, CSS3, javaScript, jQuery, firebase, parse, mustache templates, media queries",
-    "features": "Responsive, Vector (SVG) images, Mobile first. ",
-    "description": "Hey! It's the page that you're already on :) This website, as you may have guessed was designed and semantically hand coded from scratch by me using HTML5, CSS3, jQuery, and javaScript on a bootstrap framework. To dynamically render the portfolio cards, I ping an API that I built and am hosting on firebase. The images are coming from my image dump on Parse. I also take advantage of SVG vector images and animation. It is fully responsive and supports all major browsers.",
-    "name": "Portfolio",
-    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-3f6d0f31-0a28-4017-8293-4faeae462de8-portfolio.jpg",
-    "website": "http://larryshawn.github.io/portfolio/"
+    "stack": "HTML5, CSS3, video, slider",
+    "features": "responsive, mobile first. ",
+    "description": "This mobile first design is coded in HTML5 and CSS3 on a bootstrap framework. Here I incorporate the trailer movie and a purely html/css image slider of key images. This website is fully responsive and supports all major browsers.",
+    "name": "300 Movie",
+    "thumbnail": "http://files.parsetfss.com/386d9574-ec7a-48b3-8d7d-6f0771a61fe8/tfss-f21122b4-2f7e-40ad-a640-74803c91b1bd-300.jpg",
+    "website": "http://larryshawn.github.io/300movie/"
   } ]
 }
