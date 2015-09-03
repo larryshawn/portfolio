@@ -29,6 +29,10 @@ ol, ul {
     top: 0;
 }
 
+.mono {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+}
+
 .main-nav {
     float: right;
     margin-right: 3%;
@@ -74,7 +78,7 @@ ol, ul {
 }
 
 #main-container h1, #portfolio-header h1 {
-  font-family: monospace;
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-size: 30px;
     line-height: 1em;
     color: white;
@@ -566,9 +570,12 @@ html {
   bottom: 20px;
 }
 
+.about-text p {
+  text-align: justify;
+}
+
 .about-text p strong {
   color: #CDE5FE;
-  font-size: 1.2em;
 }
 
 
@@ -728,6 +735,11 @@ html {
   #main-container {
     padding: 20px 80px;
   }
+  .about-text {
+    height: 64%;
+    background-color: transparent;
+    margin-top: 50px;
+  }
 }
 /* medium up (tablets) */
 @media only screen and (min-width: 64.063em) {
@@ -772,10 +784,6 @@ html {
   }
   .introduction {
     top: 25%;
-  }
-  .about-text {
-    height: 70%;
-    background-color: transparent;
   }
 }
 /* large up (desktop) */

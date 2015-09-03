@@ -98,15 +98,10 @@ body {
   color: white;
 }
 .description {
-  height: 84px;
-  overflow: auto;
   font-size: 14px;
-  overflow-y: scroll;
   white-space: normal;  
   color: #999;
   text-align: left;
-  -webkit-overflow-scrolling: touch;
-  background-color: rgba(0,0,0,.9);
   padding: 4px;
 }
 
