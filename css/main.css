@@ -578,6 +578,9 @@ html {
   color: #CDE5FE;
 }
 
+#hamburger-icon-script {
+  display: none;
+}
 
 /* elements that are using media queries */
 
