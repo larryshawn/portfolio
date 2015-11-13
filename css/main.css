@@ -587,6 +587,16 @@ html {
   display: none;
 }
 
+#sticky-element {
+  float: left;
+  width: 100px;
+  height: 100px;
+  color: white;
+  background-color: #333;
+  position: -webkit-sticky;
+  top: 100px;
+}
+
 /* elements that are using media queries */
 
 
