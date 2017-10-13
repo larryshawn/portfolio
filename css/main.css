@@ -1,7 +1,7 @@
 body {
   color: white;
   font-family: helvetica,Arial,sans-serif;
-  background: #FBFBFB;
+  background: slategray;
   position: absolute;
   top: 0;
   right: 0;
@@ -81,7 +81,7 @@ ol, ul {
   font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
     font-size: 30px;
     line-height: 1em;
-    color: slategray;
+    color: white;
     padding-bottom: 30px;
     padding-top: 0px;
 }
@@ -103,7 +103,7 @@ footer h1 {
 
 #portfolio-header {
   text-align: center;
-  background-color: #FBFBFB;
+  background-color: rgb(255, 199, 82);
   width: 100%;
 }
 
@@ -115,7 +115,7 @@ footer h1 {
 
 #alternate-container {
   width: 100%;
-  background-color: #FBFBFB;
+  background-color: #FFC752;
   color: #ebebeb;
   padding-bottom: 80px;
 }
@@ -231,7 +231,7 @@ html {
 }
 
 html {
-  background: slategray;
+  background: #0e1925;
   font-size: 0.625em;
 }
 
@@ -529,7 +529,7 @@ html {
 
 .superhero {
   position: absolute;
-  bottom: 22px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 80%;
@@ -547,7 +547,6 @@ html {
   font-size: 2.5em;
   line-height: 1.5em;
   text-align: center;
-  color: slategray;
 }
 
 .introduction p {
@@ -580,7 +579,7 @@ html {
 }
 
 .about-text p strong {
-  color: slategray;
+  color: #CDE5FE;
 }
 
 #hamburger-icon-script {
@@ -655,12 +654,6 @@ html {
 /* media queries */
 /* xs up (phone portrait) */
 @media only screen {
-
-  .gallery {
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
   
   .main-section {
     padding: 2em 20px;
@@ -675,7 +668,7 @@ html {
     overflow-y: scroll;
     position: relative;
     -webkit-overflow-scrolling: touch;
-    background-color: #FBFBFB;
+    background-color: rgb(22, 40, 50);
     bottom: 20px
   }
 
@@ -694,10 +687,10 @@ html {
   #main-container {
   width: 100%;
   height: 100%;
-  background-color: white;
+  background-color: rgba(113, 203, 223, 0.17);
   padding: 20px 20px;
   line-height: 1.8em;
-  color: slategray;
+  color: #AEC4DB;
   }
   
   .logo {
@@ -736,12 +729,6 @@ html {
     top: 60%;
     right: 0;
   }
-
-  .gallery {
-    overflow-x: auto;
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-  }
   
   .main-nav-list {
     width: 143px;
@@ -760,8 +747,7 @@ html {
     padding: 20px 80px;
   }
   .about-text {
-    height: auto;
-    overflow-y: auto;
+    height: 64%;
     background-color: transparent;
     margin-top: 50px;
   }
