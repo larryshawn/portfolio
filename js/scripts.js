@@ -1,13 +1,3 @@
-// $(window).on('scroll', function() {
-//     var y_scroll_pos = window.pageYOffset;
-//     var scroll_pos_test = 550;             // set to whatever you want it to be
-
-//     if(y_scroll_pos > scroll_pos_test) {
-//         //do stuff
-//         console.log("I reached 150 in the scroll position");
-//     }
-// });
-
 $(".si-icon svg").click(function(){
   $(".main-nav-list").toggleClass( "flex" );
 });

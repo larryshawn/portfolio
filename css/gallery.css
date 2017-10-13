@@ -12,19 +12,19 @@ body {
   z-index: 900;
 }
 
-#thumbnails-container {
+#card-container {
   text-align: center;
   /*max-width: 1050px;*/
   margin: 0px auto 10px auto;
 }
 
-.movie-thumbnail {
+.portfolio-thumbnail {
   display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 315px;
-  border: 4px solid white;
+  border: 4px solid #E0E0E0;
   overflow: hidden;
   border-radius: 10px;
   max-width: 315px;
@@ -32,22 +32,13 @@ body {
   cursor: pointer;
 }
 
-.movie-thumbnail:hover {
+.portfolio-thumbnail:hover {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
   transform: all 2s;
 }
 
-/* Horizontal image gallery */
-.gallery {
-  overflow-x: scroll;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-}
-/* I want to have neighboring images peek through.
-   All <img> elements underneath .gallery
-   are shrunk to 90% width. */
 .gallery > div {
   width: 95%;
 }

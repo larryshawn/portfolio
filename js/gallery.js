@@ -1,45 +1,71 @@
-"use strict";
-function fetchData() {
-  var rawTemplate = $('#music-template').html();
-  var resultString = '';
+$(function() {
+  "use strict";
+  init();
 
-  $.get('https://larrybabcock.firebaseio.com/works.json', function(works) {
+  function init() {
+    loadJSON(function(response) {
+      var works = JSON.parse(response);
+
+      fetchData(works);
+      handleEvents();
+    });
+  }
+
+  function loadJSON(callback) {   
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'js/portfolio.json', true); 
+    xobj.onreadystatechange = function () {
+      if (xobj.readyState == 4 && xobj.status == "200") {
+        callback(xobj.responseText);
+      }
+    };
+    xobj.send(null);  
+  }
+
+  function fetchData(works) {
+    var rawTemplate = $('#portfolio-template').html(),
+    resultString = '';
 
     for (var i = 0; i < works.length; i++) {
       resultString += Mustache.render(rawTemplate, works[i]);
     }
 
-    $('#thumbnails-container').append(resultString);
-    handleClickEvents();
-  });
-}
+    $('#card-container').append(resultString);
+  }
 
-function handleClickEvents() {
-  // If any movie thumbnail gets clicked, slide the mask curtain down.
-  $('.movie-thumbnail').click(function(e) {
+  function handleEvents() {
+    $('.portfolio-thumbnail').click(function(e) {
+      showMask(e);
+    });
+    
+    $('.close-btn').click(function(e) {
+      hideMask(e);
+    });
+
+    $(window).scroll(function() {
+      showNav();
+    });
+  }
+
+  function showMask(e) {
     var mask = $(e.target).children('.mask');
     mask.css('top', '0');
-    $('header').fadeOut();
-    // on scrolling past a certain distance...
-$(window).scroll(function() {
+    hideNav();
+  }
 
-    //if I scroll more than 100px...
+  function hideMask(e) {
+    var mask = $(e.target).parent();
+    mask.css('top', '-365px');
+  }
+
+  function showNav() {
     if($(window).scrollTop() > 100){
       $('header').fadeIn();
     }
+  }
+
+  function hideNav() {
+    $('header').fadeOut();
+  }
 });
-  });
-
-  // $('.mask').mouseout(function(e) {
-  //   var mask = $(e.target).children('.mask');
-  //   mask.css('transform', 'translateY(-365px)');
-  // });
-
-  // If any close button gets clicked, slide the mask curtain up.
-  $('.close-btn').click(function(e) {
-    var mask = $(e.target).parent();
-    mask.css('top', '-365px');
-  });
-}
-
-fetchData();
