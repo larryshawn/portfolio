@@ -1,24 +1,13 @@
-<script setup lang="ts">
-// import HelloWorld from './components/HelloWorld.vue'
-import Home from './components/Home.vue'
-</script>
-
 <template>
   <div>
-    <!-- <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a> -->
-    <!-- <a href="https://vuejs.org/" target="_blank"> -->
-      <img src="./assets/logo.png" class="logo" alt="{LB}" />
-    <!-- </a> -->
-  
-  <!-- <HelloWorld msg="Vite + Vue +TS" /> -->
+    <img src="./assets/logo.png" class="logo" @click="showModal" alt="{LB}" />
   <Home />
 </div>
 </template>
+
+<script setup lang="ts">
+import Home from './components/Home.vue'
+</script>
 
 <style scoped>
 .logo {
@@ -31,9 +20,6 @@ import Home from './components/Home.vue'
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+  filter: drop-shadow(0 0 2em #2362f6bd);
 }
 </style>
