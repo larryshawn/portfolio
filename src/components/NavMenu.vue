@@ -1,19 +1,50 @@
-<script>
+<script setup>
 import LogoElement from './LogoElement.vue'
-export default {
-  components: {
-    LogoElement: LogoElement
-  }
+import { defineComponent } from 'vue'
+
+import { useCurrentUser, useFirebaseAuth } from 'vuefire'
+import { signOut } from 'firebase/auth'
+
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+const auth = useFirebaseAuth()
+
+async function signOutOfFirebase() {
+  signOut(auth)
+    .then(() => {
+      console.log('Sign-out successful.')
+      router.push({ name: 'cafeApp' })
+    })
+    .catch((error) => {
+      console.log('error: ', error)
+    })
 }
+
+const user = useCurrentUser()
+console.log('user: ', user)
+
+const components = {
+  LogoElement
+}
+
+defineComponent({ components })
 </script>
+
 <template>
   <nav>
     <RouterLink :to="{ name: 'home' }"><LogoElement /></RouterLink>
-    <RouterLink :to="{ name: 'about' }">About</RouterLink>
     <RouterLink :to="{ name: 'contact' }">Contact</RouterLink>
     <RouterLink :to="{ name: 'events' }">Events</RouterLink>
-    <RouterLink :to="{ name: 'event-create' }">Create Event</RouterLink>
-    <RouterLink :to="{ name: 'todo-app' }">Todo App</RouterLink>
+    <RouterLink :to="{ name: 'eventCreate' }">Create Event</RouterLink>
+    <RouterLink :to="{ name: 'todoApp' }">Todo App</RouterLink>
+    <RouterLink :to="{ name: 'cafeApp' }">Cafe App</RouterLink>
+    <RouterLink :to="{ name: 'newCafe' }">Add Cafe</RouterLink>
+    <RouterLink v-if="user" :to="{ name: 'cafeApp' }" @click="signOutOfFirebase"
+      >Sign out</RouterLink
+    >
+    <RouterLink v-else :to="{ name: 'signIn' }">Sign in</RouterLink>
   </nav>
 </template>
 
@@ -39,6 +70,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
+  width: 100%;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
 }

@@ -4,8 +4,6 @@
   <TodoList />
 </template>
 
-<script setup></script>
-
 <script setup>
 import TodoForm from '@/components/TodoForm.vue'
 import TodoList from '@/components/TodoList.vue'

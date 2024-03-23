@@ -5,6 +5,7 @@ import EventListView from '../views/EventListView.vue'
 import EventDetailsView from '../views/EventDetailsView.vue'
 import EventCreateView from '@/views/EventCreateView.vue'
 import TodoAppView from '@/views/TodoAppView.vue'
+import CafeAppView from '@/views/CafeAppView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -13,14 +14,6 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import('../views/AboutView.vue')
     },
     {
       path: '/contact',
@@ -34,19 +27,39 @@ const router = createRouter({
     },
     {
       path: '/event/:id',
-      name: 'event-details',
+      name: 'eventDetails',
       props: true,
       component: EventDetailsView
     },
     {
       path: '/event-create',
-      name: 'event-create',
+      name: 'eventCreate',
       component: EventCreateView
     },
     {
       path: '/todo-app',
-      name: 'todo-app',
+      name: 'todoApp',
       component: TodoAppView
+    },
+    {
+      path: '/cafe-app',
+      name: 'cafeApp',
+      component: CafeAppView
+    },
+    {
+      path: '/new',
+      name: 'newCafe',
+      component: () => import('@/views/NewCafePage.vue')
+    },
+    {
+      path: '/cafe/:id',
+      name: 'editCafe',
+      component: () => import('@/views/EditCafePage.vue')
+    },
+    {
+      path: '/sign-in',
+      name: 'signIn',
+      component: () => import('@/views/SignInPage.vue')
     }
   ]
 })
