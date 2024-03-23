@@ -1,5 +1,5 @@
 <script setup lang="ts">
-  import { inject } from 'vue';
+  import { inject } from "vue";
 
   // This is typescript
   // Define the types of injected data
@@ -8,7 +8,6 @@
     isHuman: boolean
     feelings: string[]
   }
-
   // Inject provided data and specify types
   // const injectedMessage = inject<string>('message')
   // const injectedIsHuman = inject<boolean>('isHuman')
@@ -19,7 +18,7 @@
 </script>
 
 <template>
-<div>
+<div class="centered-col">
     <h1>Welcome!</h1>
     <p>Hello there! 👋</p>
 
@@ -50,7 +49,5 @@
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
+
 </style>
