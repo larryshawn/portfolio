@@ -32,6 +32,11 @@ async function addCafe() {
     router.push({ name: 'cafeApp' })
   }
 }
+
+const cancelAdd = () => {
+  router.push({ name: 'cafeApp' })
+}
+
 console.log('Document written with ID: ', newCafe.value.id)
 </script>
 
@@ -41,7 +46,13 @@ console.log('Document written with ID: ', newCafe.value.id)
     <BaseCard>
       <template v-slot:default>
         <BaseForm>
-          <BaseInput v-model="newCafe.name" label="Name" required placeholder="Cafe with a Vue" />
+          <BaseInput
+            v-model="newCafe.name"
+            label="Name"
+            required
+            placeholder="Cafe with a Vue"
+            variant="underlined"
+          />
           <BaseInput
             v-model="newCafe.rating"
             label="Rating"
@@ -49,15 +60,17 @@ console.log('Document written with ID: ', newCafe.value.id)
             min="0"
             max="5"
             step="0.5"
+            variant="underlined"
             required
           />
-          <BaseInput v-model="newCafe.location" label="Location" required />
+          <BaseInput v-model="newCafe.location" label="Location" variant="underlined" required />
           <BaseInput
             v-model.number="newCafe.price"
             label="Price"
             type="number"
             min="1"
             max="4"
+            variant="underlined"
             required
           />
           <BaseCheckbox v-model="newCafe.favorite" label="Favorite" />
@@ -65,7 +78,7 @@ console.log('Document written with ID: ', newCafe.value.id)
       </template>
       <template v-slot:actions>
         <BaseButton @click="addCafe" variant="tonal" color="success"> Add New Cafe </BaseButton>
-        <BaseButton variant="tonal" color="error" outline> Cancel </BaseButton>
+        <BaseButton variant="tonal" color="error" outline @click="cancelAdd"> Cancel </BaseButton>
       </template>
     </BaseCard>
   </BaseContainer>

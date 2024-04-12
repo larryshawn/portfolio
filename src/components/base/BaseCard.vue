@@ -2,6 +2,9 @@
 
 <template>
   <v-card>
+    <v-card-title>
+      <slot name="title" />
+    </v-card-title>
     <v-card-text>
       <slot name="default" />
     </v-card-text>

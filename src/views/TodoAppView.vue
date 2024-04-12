@@ -1,7 +1,7 @@
 <template>
-  <div class="container center-aligned-col">
+  <BaseContainer>
     <TodoApp />
-  </div>
+  </BaseContainer>
 </template>
 
 <script setup>
