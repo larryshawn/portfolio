@@ -21,6 +21,8 @@ const userInput = ref({
   name: ''
 })
 
+const showPassword = ref(false)
+
 const router = useRouter()
 
 const auth = useFirebaseAuth()
@@ -75,8 +77,8 @@ async function addName() {
 
 <template>
   <BaseContainer>
-    <h1 class="mb-4">Sign In</h1>
-    <BaseCard>
+    <BaseCard class="mt-5 mx-a">
+      <template v-slot:title><h1 class="mb-4">Login</h1></template>
       <template v-slot:default>
         <BaseForm>
           <BaseInput
@@ -84,20 +86,34 @@ async function addName() {
             type="name"
             label="Name"
             required
-            placeholder="eleanorshellstrop@thegoodplace.com"
+            placeholder="you"
+            variant="underlined"
           />
           <BaseInput
             v-model="userInput.email"
             type="email"
             label="Email"
             required
-            placeholder="eleanorshellstrop@thegoodplace.com"
+            variant="underlined"
+            placeholder="you@your.com"
+            prepend-icon="mdi-account-circle"
           />
-          <BaseInput v-model="userInput.password" label="Password" type="password" required />
+          <BaseInput
+            v-model="userInput.password"
+            label="Password"
+            :type="showPassword ? 'text' : 'password'"
+            required
+            variant="underlined"
+            prepend-icon="mdi-lock"
+            :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
+            @click:append="showPassword = !showPassword"
+          />
         </BaseForm>
+        <v-divider></v-divider>
       </template>
       <template v-slot:actions>
         <BaseButton @click="signInToFirebase" variant="tonal" color="success"> Sign In </BaseButton>
+        <v-spacer></v-spacer>
         <BaseButton @click="createUser" variant="tonal" color="secondary" outline>
           Create New User
         </BaseButton>
