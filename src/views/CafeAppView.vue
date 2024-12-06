@@ -48,11 +48,11 @@ async function signOutOfFirebase() {
 <template>
   <v-container>
     <v-sheet>
-      <h1 class="edu-au-vic-wa-nt-pre-me text-3xl mb-4">Cafe Hive</h1>
+      <h1 class="edu-au-vic-wa-nt-pre-me text-3xl mb-10">Cafe Hive</h1>
       <v-btn v-if="user" :to="{ name: 'cafeApp' }" @click="signOutOfFirebase">Sign out</v-btn>
       <div v-else>
-        <v-btn :to="{ name: 'signIn' }">Sign in</v-btn>
-        <small>You're currently logged out.</small>
+        <v-btn class="ml-4" :to="{ name: 'signIn' }">Sign in</v-btn>
+        <small class="ml-4">You're currently logged out.</small>
       </div>
       <SidebarLayout>
         <template v-slot:sidebar>
@@ -64,6 +64,7 @@ async function signOutOfFirebase() {
                 label="Search"
                 variant="underlined"
                 prepend-icon="mdi-store-search"
+                class="ml-2"
               />
               <BaseCheckbox v-model="filterParams.favorite" label="Favorited" />
             </BaseForm>
@@ -83,7 +84,7 @@ async function signOutOfFirebase() {
   </v-container>
 </template>
 
-<style scoped>
+<style>
 .edu-au-vic-wa-nt-pre-me {
   font-family: 'Edu AU VIC WA NT Pre', cursive;
   font-optical-sizing: auto;

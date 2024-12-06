@@ -79,7 +79,7 @@ async function addName() {
 <template>
   <BaseContainer>
     <BaseCard class="mt-5 mx-a">
-      <template v-slot:title><h1 class="mb-4">Login</h1></template>
+      <template v-slot:title><h1 class="edu-au-vic-wa-nt-pre-me text-3xl mb-4">Login</h1></template>
       <template v-slot:default>
         <BaseForm>
           <BaseInput
