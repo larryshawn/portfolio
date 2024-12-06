@@ -1,6 +1,7 @@
 <template>
   <v-sheet class="overflow-hidden">
-    <v-timeline align-top :dense="true" side="end">
+    <v-timeline align-top :dense="true" :side>
+      <!-- optional all on one side. Insert above: side="end" -->
       <v-timeline-item
         v-for="(item, i) in timeline"
         :key="i"
@@ -8,6 +9,9 @@
         :icon="item.icon"
         fill-dot
       >
+        <template v-slot:opposite>
+          <span>{{ item.opposite }}</span>
+        </template>
         <v-card :color="item.color" dark>
           <v-card-title class="title pt-3 pb-3">
             <h3 class="title">{{ item.title }}</h3>
@@ -27,6 +31,10 @@
 defineProps({
   timeline: {
     type: Array,
+    required: true
+  },
+  side: {
+    type: String,
     required: true
   }
 })

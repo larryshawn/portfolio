@@ -67,6 +67,16 @@ const router = createRouter({
       component: () => import('@/views/SignUpPage.vue')
     },
     {
+      path: '/test',
+      name: 'test',
+      component: () => import('@/views/test.vue')
+    },
+    {
+      path: '/movie-rating',
+      name: 'movieRating',
+      component: () => import('@/views/MovieRatingApp.vue')
+    },
+    {
       path: '/dashboard',
       name: 'dashboard',
       component: () => import('@/views/DashboardView.vue')

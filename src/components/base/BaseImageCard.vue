@@ -5,7 +5,7 @@ import BaseImage from './BaseImage.vue'
 <template>
   <v-card dark class="mb-4">
     <v-row>
-      <v-col cols="3">
+      <v-col>
         <v-container>
           <slot name="image" />
         </v-container>

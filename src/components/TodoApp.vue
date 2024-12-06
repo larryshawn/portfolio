@@ -1,5 +1,7 @@
 <template>
-  <TodoForm />
+  <div class="bg-image">
+    <TodoForm />
+  </div>
   <TodoList />
 </template>
 
@@ -16,4 +18,11 @@ const components = {
 defineComponent({ components })
 </script>
 
-<style scoped></style>
+<style scoped>
+.bg-image {
+  background: url('@/assets/apples.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+</style>

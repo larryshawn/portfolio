@@ -1,15 +1,14 @@
 <template>
-  <main class="center-col">
+  <v-main>
     <Home />
-  </main>
+  </v-main>
 </template>
 
 <script setup>
-import Home from '../components/Home.vue'
+import Home from '../components/HomeComponent.vue'
 </script>
-<style>
-.center-col {
-  max-width: 500px;
-  margin: 0 auto;
+<style scoped>
+.v-main {
+  padding-top: 0 !important;
 }
 </style>

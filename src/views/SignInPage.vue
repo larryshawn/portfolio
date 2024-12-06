@@ -40,6 +40,7 @@ async function signInToFirebase() {
       const errorMessage = error.message
       console.log('error code: ', errorCode)
       console.log('error message: ', errorMessage)
+      alert('error message: ' + errorMessage)
     })
 }
 

@@ -1,0 +1,44 @@
+[
+    {
+      "color": "red lighten-2",
+      "icon": "mdi-account-tie",
+      "title": "Front End Web Developer at Naked Wines (300 ppl) , Sydney, AU - San Francisco, US",
+      "text": "Focused on front-end solutions to elevate overall performance for a global direct-to-consumer online wine platform. Transitioned from the US team (2018-21) to Sydney, where I served as the lead AU developer 20 21- 2024. I supported local technical development needs and also bridged the gap between non-technical teams in Australia and the UK-based tech team, ensuring seamless communication and effective collaboration.",
+      "opposite": "August 2018 — March 2024"
+    },
+    {
+      "color": "purple darken-1",
+      "icon": "mdi-account-tie",
+      "title": "Front End Web Developer at Socratic Technologies (40 ppl), San Francisco, US",
+      "text": "Contributed to the ongoing front-end enhancement of a B2B self-service marketing research, analytics, and reporting application, elevating the overall effectiveness of the product.",
+      "opposite": "January 2016 — June 2018"
+    },
+    {
+      "color": "green lighten-1",
+      "icon": "mdi-account-tie",
+      "title": "Front End Web Developer at VNU Retail Group (20 ppl) , San Francisco, US",
+      "text": "Actively participated in the ongoing development initiatives for an online retail shopping application. (Emporium) Played a pivotal role in optimising existing functionalities using HTML, CSS, jQuery, and Javascript in a PHP MVC environment. Collaborated with remote teams to implement enhancements, conducted thorough testing, and provided valuable insights for continual improvement.",
+      "opposite": "July 2014 — December 2015"
+    },
+    {
+      "color": "indigo",
+      "icon": "mdi-account-tie",
+      "title": "Front End Web Dev / Designer at j6 Creations LLC , San Francisco, US",
+      "text": "Operated an independent consulting venture, excelling in responsive mobile-first web development and graphic design. Successfully managed the entire project lifecycle, from project planning to crafting HTML5 and CSS websites. Created WordPress-driven sites, customized them, and developed various web graphic assets. Implemented responsive design using CSS media queries for mobile optimization.",
+      "opposite": "August 2011 — June 2014"
+    },
+    {
+      "color": "red lighten-2",
+      "icon": "mdi-account-tie",
+      "title": "Web Designer at Partner Weekly, LLC (150 ppl), Las Vegas, US",
+      "text": "Played a pivotal role in the development of the flagship product, moneymutual.com, including its mobile and Spanish versions. Additionally, designed and coded over 100 profitable websites, contributing to a robust and diversified portfolio. Achievements include winning multiple in-house design competitions, extensive logo design, and authoring HTML and CSS for over 100 profitable websites.",
+      "opposite": "May 2007 — August 2011"
+    },
+    {
+      "color": "purple darken-1",
+      "icon": "mdi-account-tie",
+      "title": "Web Designer at MGM Mirage Corporate (10,000+ ppl), Las Vegas, US",
+      "text": "Crafted and developed web pages, promotional assets, and dynamic content for all 14 portfolio property websites under the MGM Mirage corporate umbrella. I was initially hired as the sole development resource responsible for all releases across all sites. As operations grew, I became a key member of a larger team, continuing to handle all coding and implementation work but at a larger scale.",
+      "opposite": "January 2004 — August 2007"
+    }
+  ]

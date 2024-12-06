@@ -1,6 +1,6 @@
 <script setup>
 import LogoElement from './LogoElement.vue'
-import { defineComponent } from 'vue'
+import { defineComponent, inject } from 'vue'
 
 import { useCurrentUser, useFirebaseAuth } from 'vuefire'
 import { signOut } from 'firebase/auth'
@@ -22,6 +22,16 @@ async function signOutOfFirebase() {
     })
 }
 
+const toggleTheme = inject('toggleTheme')
+const boo = inject('boo')
+
+// Define function to handle button click
+const onToggleThemeClick = () => {
+  if (toggleTheme) {
+    toggleTheme()
+  }
+}
+
 const user = useCurrentUser()
 console.log('user: ', user)
 
@@ -40,12 +50,19 @@ defineComponent({ components })
 </script>
 
 <template>
-  <v-app-bar color="indigo" flat>
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-    <v-app-bar-title
-      ><RouterLink :to="{ name: 'home' }"><LogoElement /></RouterLink
-    ></v-app-bar-title>
+  <v-app-bar class="navbar indigo-opaque" flat>
+    <!-- insert color="indigo" above if color wanted again -->
+    <!-- <v-app-bar-nav-icon></v-app-bar-nav-icon> -->
+    <RouterLink :to="{ name: 'home' }"><LogoElement /></RouterLink>
     <v-spacer></v-spacer>
+    <v-tooltip text="Toggle Theme">
+      <template v-slot:activator="{ props }">
+        <v-btn v-bind="props" @click="onToggleThemeClick" text rounded
+          ><v-icon size="30">mdi-theme-light-dark</v-icon>
+        </v-btn>
+      </template>
+    </v-tooltip>
+
     <v-btn
       v-for="link in links"
       :key="`${link.name}-header-link`"
@@ -57,9 +74,20 @@ defineComponent({ components })
     >
       {{ link.name }}
     </v-btn>
-    <v-btn v-if="user" :to="{ name: 'cafeApp' }" @click="signOutOfFirebase">Sign out</v-btn>
-    <v-btn v-else :to="{ name: 'signIn' }">Sign in</v-btn>
   </v-app-bar>
 </template>
 
-<style scoped></style>
+<style scoped>
+.navbar {
+  display: flex;
+  align-items: center; /* Centers the logo vertically */
+  /* height: 70px; */
+  padding: 0 20px; /* Optional: adds space around the logo */
+}
+
+.logo {
+  margin: 0 auto; /* Centers the logo horizontally */
+  width: 50px;
+  height: 50px;
+}
+</style>
