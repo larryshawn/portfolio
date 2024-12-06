@@ -4,6 +4,7 @@ import NavMenu from './components/NavMenu.vue'
 import AppLayout from './layouts/AppLayout.vue'
 import { useFirebaseAuth } from 'vuefire'
 import { ref } from 'vue'
+import './assets/tailwind.css'
 
 const route = useRoute()
 
@@ -13,13 +14,14 @@ console.log(auth)
 
 const links = ref([
   // { name: 'Home', linkName: 'home' },
-  { name: 'Contact', linkName: 'contact' },
+  // { name: 'Contact', linkName: 'contact' },
   // { name: 'Events', linkName: 'events' },
   // { name: 'Create Event', linkName: 'eventCreate' },
-  { name: 'Todo App', linkName: 'todoApp' },
-  { name: 'Cafe App', linkName: 'cafeApp' },
-  { name: 'Dashboard', linkName: 'dashboard' },
-  { name: 'Sign up', linkName: 'signUp' }
+  // { name: 'Todo App', linkName: 'todoApp' },
+  // { name: 'Cafe App', linkName: 'cafeApp' },
+  // { name: 'Movie Rating App', linkName: 'movieRating' },
+  // { name: 'Dashboard', linkName: 'dashboard' }
+  // { name: 'Sign up', linkName: 'signUp' },
   // { name: 'Add Cafe', linkName: 'newCafe' }
 ])
 </script>
@@ -31,15 +33,13 @@ const links = ref([
     </template>
     <template v-slot:content>
       <Suspense>
-        <v-content>
-          <RouterView :key="route.fullPath" />
-          <template v-slot:fallback>
-            <p>Content not found. Contact your developer for more info.</p>
-          </template>
-        </v-content>
+        <RouterView :key="route.fullPath" />
+        <template v-slot:fallback>
+          <p>404 Content not found.</p>
+        </template>
       </Suspense>
 
-      <v-footer class="bg-indigo-lighten-1" app>
+      <v-footer class="bg-indigo-lighten-1">
         <v-row justify="center" no-gutters>
           <v-btn
             v-for="link in links"
@@ -53,7 +53,7 @@ const links = ref([
             {{ link.name }}
           </v-btn>
           <v-col class="text-center mt-4" cols="12">
-            {{ new Date().getFullYear() }} — <strong>Larry Babcock</strong>
+            &copy; {{ new Date().getFullYear() }} — <strong>Larry Babcock</strong>
           </v-col>
         </v-row>
       </v-footer>

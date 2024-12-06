@@ -11,7 +11,7 @@ const cafeImage = computed(() => {
 </script>
 
 <template>
-  <BaseImage :src="cafeImage" cover height="150" />
+  <BaseImage :src="cafeImage" cover height="150" min-width="150" />
 </template>
 
 <style></style>

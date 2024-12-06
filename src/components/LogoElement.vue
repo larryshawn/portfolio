@@ -9,7 +9,6 @@
   margin: 0 auto 2rem;
   width: 50px;
   height: 50px;
-  display: inline;
 }
 
 @media (min-width: 1024px) {

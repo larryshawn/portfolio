@@ -1,20 +1,22 @@
 <template>
-  <!-- <form @submit.prevent="addItemAndClear(todo)">
-    <BaseInput class="small-input" v-model="todo" label="Task" placeholder=" " type="text" />
-    <button class="button">Add</button>
-  </form> -->
-
   <BaseContainer>
     <BaseCard class="mt-5 mx-a">
-      <template v-slot:title><h1 class="mb-4">Todos</h1></template>
+      <template v-slot:title>
+        <!-- <h1 class="font-poppins text-xl">Shopping list</h1>
+        <p class="font-quicksand text-lg">Shopping list</p>
+        <h2 class="font-robotoSlab text-2xl">Shopping list</h2> -->
+        <!-- <h3 class="font-caveat text-3xl">Shopping list</h3> -->
+        <!-- <p class="font-nunito text-lg">Shopping list</p> -->
+        <h1 class="font-pacifico text-3xl">Shopping list</h1>
+      </template>
       <template v-slot:default>
         <BaseForm @submit.prevent="addItemAndClear(todo)">
           <BaseInput
             v-model="todo"
             type="text"
-            label="Task"
+            label="Grocery Item"
             required
-            placeholder="eat"
+            placeholder="Item to add"
             variant="underlined"
             @keyup.enter="addItemAndClear(todo)"
           />
@@ -22,13 +24,28 @@
         <v-divider></v-divider>
       </template>
       <template v-slot:actions>
-        <BaseButton @click="addItemAndClear(todo)" variant="tonal" color="success">
-          Add task
-        </BaseButton>
-        <!-- <v-spacer></v-spacer>
-        <BaseButton @click="createUser" variant="tonal" color="secondary" outline>
-          Create New User
-        </BaseButton> -->
+        <v-tooltip text="Add Item">
+          <template v-slot:activator="{ props }">
+            <BaseButton
+              v-bind="props"
+              @click="addItemAndClear(todo)"
+              variant="tonal"
+              color="success"
+            >
+              <v-icon size="30">mdi-basket-plus</v-icon>
+            </BaseButton>
+          </template>
+        </v-tooltip>
+
+        <v-spacer></v-spacer>
+
+        <v-tooltip text="Clear All Items">
+          <template v-slot:activator="{ props }">
+            <BaseButton v-bind="props" @click="clearItems" variant="tonal" color="warning" outline>
+              <v-icon size="30">mdi-delete-sweep</v-icon>
+            </BaseButton>
+          </template>
+        </v-tooltip>
       </template>
     </BaseCard>
   </BaseContainer>
@@ -55,6 +72,10 @@ function addItemAndClear(item) {
   // invokes function in the store:
   store.addTodo(item)
   todo.value = ''
+}
+
+function clearItems() {
+  store.clearTodos() // Clear all items from the store
 }
 </script>
 

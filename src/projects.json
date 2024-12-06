@@ -1,0 +1,67 @@
+{
+    "projects": [
+		{
+			"id": 1,
+			"name": "The Office Dashboard",
+            "type": "Dynamic Data-driven App",
+			"task": "Showcase of my ability to take company data and display it in an easily digestible format",
+			"tools": [
+				"Javascript",
+				"Vuetify",
+                "slots",
+                "sorts"
+			],
+			"framework": "Vue",
+			"link": "/dashboard",
+			"image": "/assets/dashboard2.png"
+		},
+        {
+			"id": 2,
+			"name": "Cafe Hive",
+            "type": "dynamic app",
+			"task": "I built this Vue app to display my backend dev skills. It is connected to a Firebase database that I built and requires users to sign in to use it.",
+			"tools": [
+				"Javascript",
+				"Vuetify",
+                "base form components",
+                "Firebase",
+				"VueFire",
+                "FireStore",
+				"bootstrap"
+			],
+			"framework": "Vue",
+			"link": "/cafe-app",
+			"image": "/assets/cafe-hive.png"
+		},
+		{
+			"id": 3,
+			"name": "Movie Rating",
+            "type": "Dynamic App",
+			"task": "Showcase of my ability to add, delete and manipulate data and to display it in an easily digestible format",
+			"tools": [
+				"Javascript",
+				"Tailwind",
+                "slots"
+			],
+			"framework": "Vue",
+			"link": "/movie-rating",
+			"image": "/assets/movies.png"
+		},
+		{
+			"id": 4,
+			"name": "Shopping list",
+            "type": "dynamic app",
+			"task": "I created this shopping app to help me keep track of what I need to buy.",
+			"tools": [
+				"Javascript",
+				"Vuetify",
+                "base form components",
+				"composition API",
+                "Stores"
+			],
+			"framework": "Vue",
+			"link": "/todo-app",
+			"image": "/assets/shopping.png"
+		}
+    ]
+    }
