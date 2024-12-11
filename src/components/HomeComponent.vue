@@ -115,33 +115,17 @@ defineComponent({ components })
               beach.
             </p>
 
-            <p>
-              I have a passion for golf, and I love hitting the greens whenever I get a chance.
-              Music is another big part of my life, whether I'm playing an instrument or discovering
-              new tunes. When winter comes around, you can catch me carving up the slopes on my
-              snowboard.
-            </p>
+            <p>I have a passion for golf, and I love hitting the greens whenever I get a chance.</p>
 
             <p>
               Traveling is something we love as a family, and we make it a point to explore new
               destinations whenever we can. I'm also an avid mountain biker and enjoy the thrill of
-              the trails. My love for motorcycles adds a dash of adrenaline to my life, and there's
-              nothing like the feeling of the open road.
+              the trails. My love for motorcycles and snowboarding adds a dash of adrenaline to my
+              life.
             </p>
 
-            <p>
-              As a wine enthusiast, I enjoy discovering and savoring new vintages. Camping and
-              gardening are my ways to unwind and connect with nature. Whether it's a weekend in the
-              wilderness or tending to my garden, these activities bring a sense of peace and
-              fulfillment.
-            </p>
-
-            <p>
-              Life is an adventure, and I'm always excited to see what new experiences await around
-              the corner. Through it all, I bring my passion for creativity and technical prowess to
-              every project I undertake, aiming to create web experiences that are as dynamic and
-              engaging as life itself.
-            </p>
+            <p>As a wine enthusiast, I enjoy discovering and savoring new vintages.</p>
+            <p>Camping and gardening are my ways to unwind and connect with nature.</p>
           </div>
         </v-sheet>
 
@@ -150,11 +134,38 @@ defineComponent({ components })
             <h2 class="font-extralight text-3xl">Skills</h2>
             <div class="underline"></div>
             <p>
-              I have a diverse skill set that includes <strong>Bootstrap</strong>,
-              <strong>Tailwind</strong>, <strong>TypeScript</strong>, and modern frameworks such as
-              <strong>Vue.js</strong> and <strong>React.js</strong> (currently upskilling). My
-              expertise also extends to responsive design, version control with Git, and web
-              performance optimization.
+              I have a diverse skill set that includes the core Front-End Technologies such as
+              <strong>HTML5</strong>, <strong>Bootstrap</strong>, <strong>Tailwind</strong>,
+              <strong>Flexbox</strong>, <strong>CSS3</strong>, <strong>SASS</strong>,
+              <strong>LESS</strong>, <strong>Javascript (ES6)</strong> <strong>TypeScript</strong>.
+            </p>
+            <p>
+              I'm also skilled in modern frameworks and libraries such as
+              <strong>Vue.js</strong> (similar to React's component-based architecture) and
+              <strong>React.js</strong> (currently upskilling),
+              <strong>Thymeleaf template engine</strong>, <strong>Spring framework</strong> and
+              <strong>Wordpress</strong>.
+            </p>
+            <p>
+              My Front-end integration with back-end environments experience includes working with
+              Java based and PHP based environments via <strong>API integration</strong> (Restful).
+            </p>
+            <p>
+              <strong>A/B testing</strong> and <strong>Cross-browser compatability</strong> for
+              optimisation as well as <strong>Figma</strong> and <strong>Adobe Suite</strong> for
+              prototyping are also part of my skill set.
+            </p>
+            <p>
+              I code using <strong>Single Page Application</strong> (SPA),
+              <strong>Resposive web development</strong>, <strong>WC3 Web Standards</strong> and
+              <strong>Accessibility</strong> methodologies.
+            </p>
+            <p>
+              I have experience working in <strong>Agile Development</strong> environments using
+              development and workflow tools such as: <strong>GitHub</strong>,
+              <strong>GitLab</strong>, <strong>Node Package Management</strong>,
+              <strong>Jenkins</strong>, <strong>Visual Studio Code</strong>, <strong>Jira</strong>,
+              <strong>Confluence</strong>, <strong>ClickUp</strong> and <strong>Assana</strong>.
             </p>
           </div>
         </v-sheet>
