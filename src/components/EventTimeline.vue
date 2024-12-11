@@ -17,7 +17,7 @@
             <h3 class="title">{{ item.title }}</h3>
           </v-card-title>
           <v-card-text class="bg-white text--primary">
-            <p class="pt-3 body-1 mb-0">
+            <p class="pt-3 body-1 leading-normal mb-0">
               {{ item.text }}
             </p>
           </v-card-text>
@@ -43,5 +43,8 @@ defineProps({
 <style scoped>
 .v-card .v-card-title {
   white-space: pre-wrap;
+}
+.leading-normal {
+  line-height: 1.5rem;
 }
 </style>
