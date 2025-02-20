@@ -141,8 +141,7 @@ defineComponent({ components })
             </p>
             <p>
               I'm also skilled in modern frameworks and libraries such as
-              <strong>Vue.js</strong> (similar to React's component-based architecture) and
-              <strong>React.js</strong> (currently upskilling),
+              <strong>Vue.js</strong>, <strong>React.js</strong>,
               <strong>Thymeleaf template engine</strong>, <strong>Spring framework</strong> and
               <strong>Wordpress</strong>.
             </p>
