@@ -2,11 +2,6 @@
   <BaseContainer>
     <BaseCard class="mt-5 mx-a">
       <template v-slot:title>
-        <!-- <h1 class="font-poppins text-xl">Shopping list</h1>
-        <p class="font-quicksand text-lg">Shopping list</p>
-        <h2 class="font-robotoSlab text-2xl">Shopping list</h2> -->
-        <!-- <h3 class="font-caveat text-3xl">Shopping list</h3> -->
-        <!-- <p class="font-nunito text-lg">Shopping list</p> -->
         <h1 class="font-pacifico text-3xl">Shopping list</h1>
       </template>
       <template v-slot:default>

@@ -39,7 +39,7 @@ const links = ref([
         </template>
       </Suspense>
 
-      <v-footer class="bg-indigo-lighten-1">
+      <v-footer class="">
         <v-row justify="center" no-gutters>
           <v-btn
             v-for="link in links"
